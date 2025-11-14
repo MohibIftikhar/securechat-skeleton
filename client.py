@@ -12,6 +12,9 @@ from pathlib import Path
 
 # Import our helper module
 import security_utils as sec
+from cryptography.hazmat.primitives import serialization
+from cryptography import x509  # <-- ADD THIS LINE
+from cryptography.hazmat.backends import default_backend  # <-- ADD THIS LINE
 
 HOST = 'localhost'
 PORT = 65432
